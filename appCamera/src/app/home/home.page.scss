@@ -1,0 +1,90 @@
+ion-card {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.photo-actions {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.btn-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 26px;
+  transition: transform .2s ease;
+}
+
+.btn-icon ion-icon {
+  font-size: 30px;
+  color: #ff3b6a;
+}
+
+.btn-icon:hover {
+  transform: scale(1.12);
+}
+
+.btn-icon.delete ion-icon {
+  color: #ff4d4d;
+}
+
+.btn-icon.delete:hover {
+  background: #ffe5e5;
+}
+
+.camera-fab {
+  bottom: 10vh;
+}
+
+.camera-fab ion-fab-button {
+  transition: transform 0.2s ease;
+}
+
+.camera-fab ion-fab-button:hover {
+  transform: scale(1.1);
+}
+
+/* Clase general del alert */
+.custom-caption-alert .alert-headline {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+/* Input estilizado */
+.custom-caption-alert .custom-input {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+  background: #f9f9f9;
+}
+
+/* Botón Cancelar */
+.custom-caption-alert .custom-btn-cancel {
+  --color: #ff4d4d;
+  font-weight: 600;
+}
+
+/* Botón Guardar */
+.custom-caption-alert .custom-btn-confirm {
+  --color: #4caf50;
+  font-weight: 600;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+}
+

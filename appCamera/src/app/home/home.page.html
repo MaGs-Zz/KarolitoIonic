@@ -1,0 +1,33 @@
+<ion-header> 
+  <ion-toolbar>
+    <ion-title>Camera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let photo of photos">
+    <img [src]="photo.webPath" alt="">
+
+    <div class="photo-actions">
+      <button class="btn-icon" (click)="toggleLike(photo)">
+        <ion-icon [name]="photo.liked ? 'heart' : 'heart-outline'"></ion-icon>
+      </button>
+
+      <button class="btn-icon delete" (click)="deletePhoto(photo.id)">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </div>
+
+    <ion-card-header>
+      <ion-card-subtitle>{{ photo.caption }}</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="camera-fab">
+  <ion-fab-button (click)="takePicture()" color="primary">
+    <ion-icon name="camera"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+</ion-content>
