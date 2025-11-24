@@ -1,0 +1,38 @@
+# =========================
+# Node.js
+# =========================
+node_modules/             # Dependencias, se instalan con npm install
+npm-debug.log             # Logs de errores de npm
+yarn-error.log            # Logs de errores de yarn (si usas yarn)
+
+# =========================
+# Ionic / Capacitor
+# =========================
+www/                      # Carpeta de build generada, no subir
+android/                  # Proyecto Android generado por Capacitor
+ios/                      # Proyecto iOS generado por Capacitor
+
+# =========================
+# Angular
+# =========================
+.angular/                 # Caché de Angular CLI (puede pesar mucho)
+dist/                     # Carpeta de build Angular, opcional si la generas manualmente
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/                  # Configuración de VSCode
+.idea/                    # Configuración de JetBrains / WebStorm
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store                 # macOS
+Thumbs.db                 # Windows
+
+# =========================
+# Archivos temporales
+# =========================
+*.log
+*.tmp
+*.swp
